@@ -4549,6 +4549,7 @@ input[type=button].btn-block {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  text-align: left !important;
   justify-content: space-between;
   padding: 0.5rem 1rem;
 }
@@ -4994,9 +4995,18 @@ input[type=button].btn-block {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid #00355F;
-  border-radius: 1rem;
+
+  border-bottom: 5px solid #eee;
+  border-radius: .3rem;
+
+    -o-transition: box-shadow .30s linear;
+    transition: box-shadow .30s linear;
+
+    -o-transition: color .30s linear;
+    transition: color .30s linear;
 }
+
+
 
 .card>hr {
   margin-right: 0;
@@ -10997,7 +11007,8 @@ p.lead {
 }
 
 #sideNav {
-  border-radius: 1rem;
+  border-radius: .7rem;
+
 }
 
 #sideNav .navbar-toggler:focus {
@@ -11061,6 +11072,7 @@ p.lead {
   border-radius: 100%;
   font-size: 1.5rem;
   margin-right: 1.5rem;
+  margin: 5px;
 }
 
 .social-icons .social-icon:last-child {
@@ -11127,20 +11139,41 @@ a {
 .link span {
   position: relative;
   display: inline-block;
-  color: #2c2fe8;
+  color: #00355F;
 }
 
 .link span::before {
   position: absolute;
   content: attr(data-content);
-  color: #1619cb;
+  color: #00355F;
   text-decoration: underline;
-  -webkit-text-decoration-color: #1619cb;
-  text-decoration-color: #1619cb;
+  -webkit-text-decoration-color: #00355F;
+  text-decoration-color: #00355F;
   -webkit-clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
   clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
   -webkit-transition: -webkit-clip-path 275ms ease;
   transition: -webkit-clip-path 275ms ease;
   transition: clip-path 275ms ease;
   transition: clip-path 275ms ease, -webkit-clip-path 275ms ease;
+}
+
+.onhoverdark:hover,
+.card:hover {
+
+  background-color: #fff;
+  border-radius: .7rem;
+  border-bottom: 5px solid #fff;
+
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -o-transition: box-shadow .30s ease;
+    transition: box-shadow .30s ease;
+}
+
+.onhoverdark:hover {
+  color: #00355F;
 }
