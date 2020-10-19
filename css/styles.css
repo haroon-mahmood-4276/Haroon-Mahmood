@@ -216,6 +216,7 @@ figure {
 img {
   vertical-align: middle;
   border-style: none;
+  border-radius: .7em;
 }
 
 svg {
@@ -4999,11 +5000,8 @@ input[type=button].btn-block {
   border-bottom: 5px solid #eee;
   border-radius: .3rem;
 
-    -o-transition: box-shadow .30s linear;
-    transition: box-shadow .30s linear;
-
-    -o-transition: color .30s linear;
-    transition: color .30s linear;
+  -o-transition: box-shadow .30s ease-in-out;
+  transition: box-shadow .30s ease-in-out;
 }
 
 
@@ -11164,14 +11162,14 @@ a {
   border-radius: .7rem;
   border-bottom: 5px solid #fff;
 
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    -o-transition: box-shadow .30s ease;
-    transition: box-shadow .30s ease;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 53, 95, 0.2),
+    0 6px 20px 0 rgba(0, 53, 95, 0.19);
+  -moz-box-shadow: 0 4px 8px 0 rgba(0, 53, 95, 0.2),
+    0 6px 20px 0 rgba(0, 53, 95, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 53, 95, 0.2),
+    0 6px 20px 0 rgba(0, 53, 95, 0.19);
+  -o-transition: box-shadow .30s ease;
+  transition: box-shadow .30s ease;
 }
 
 .onhoverdark:hover {
